@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ee">
+    <meta name="description" content="Sổ tay Toán 12: hệ thống kiến thức, công thức trọng tâm và câu hỏi luyện tập theo từng chuyên đề.">
+    <title>Sổ tay Toán Tra Thanh — Học theo chuyên đề</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="math-render.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Sổ tay Toán 12, về đầu trang">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span class="brand-copy"><strong>SỔ TAY</strong><span>TOÁN 12</span></span>
+      </a>
+      <nav class="top-links" aria-label="Điều hướng chính">
+        <a href="ly-thuyet.html">Lý thuyết</a>
+        <a href="#hoc-tap">Chuyên đề</a>
+        <a href="#noi-dung-chuyen-de">Công thức &amp; bài tập</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Mở menu điều hướng"><span aria-hidden="true">☰</span></summary>
+        <nav class="mobile-nav-panel" aria-label="Điều hướng trên điện thoại">
+          <a href="index.html">Trang chủ</a>
+          <a href="ly-thuyet.html">Kiến thức lý thuyết</a>
+          <a href="#hoc-tap">Chuyên đề</a>
+          <a href="#noi-dung-chuyen-de">Công thức &amp; bài tập</a>
+        </nav>
+      </details>
+      <a class="source-link" href="sgk-toan12.pdf" target="_blank" rel="noopener">
+        <span aria-hidden="true">↗</span> Mở sách giáo khoa PDF
+      </a>
+    </header>
+
+    <main>
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> BẢN ĐỒ KIẾN THỨC · LỚP 12</p>
+          <h1 id="hero-title">Hiểu bản chất.<br><span>Vững từng công thức.</span></h1>
+          <p class="hero-description">Gom những ý quan trọng thành một hành trình ôn tập rõ ràng — từ khảo sát hàm số đến xác suất.</p>
+          <a class="hero-cta" href="#hoc-tap">Bắt đầu ôn tập <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="math-note note-one">∫ f(x) dx</div>
+          <div class="math-note note-two">f′(x) &gt; 0</div>
+          <div class="math-note note-three">P(A | B)</div>
+          <div class="hero-symbol">π</div>
+          <span class="art-spark spark-one">✳</span>
+          <span class="art-spark spark-two">+</span>
+        </div>
+        <div class="hero-index"><span>01</span><span class="index-line"></span><span>06</span></div>
+      </section>
+
+      <section class="overview page-width" aria-label="Tổng quan sổ tay">
+        <div class="overview-heading">
+          <span class="section-kicker">LỘ TRÌNH CỦA BẠN</span>
+          <p>Một bước nhỏ mỗi ngày sẽ tạo nên khác biệt.</p>
+        </div>
+        <div class="overview-stats">
+          <div class="stat"><strong id="topic-count">06</strong><span>chuyên đề</span></div>
+          <div class="stat"><strong id="formula-count">—</strong><span>công thức cốt lõi</span></div>
+          <div class="stat"><strong id="progress-count">0/6</strong><span>chuyên đề đã ôn</span></div>
+        </div>
+      </section>
+
+      <section class="study-section page-width" id="hoc-tap" aria-label="Khu vực học tập">
+        <aside class="topic-sidebar" aria-label="Danh sách chuyên đề">
+          <div class="sidebar-heading">
+            <div>
+              <span class="section-kicker">NỘI DUNG</span>
+              <h2>Chuyên đề</h2>
+            </div>
+            <span class="topic-total" id="sidebar-count">06</span>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="topic-search" type="search" placeholder="Tìm chuyên đề..." autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <nav class="topic-list" id="topic-list" aria-label="Chọn chuyên đề"></nav>
+          <p class="sidebar-note"><span aria-hidden="true">✦</span> Gợi ý: ôn công thức rồi thử sức với câu hỏi cuối mỗi phần.</p>
+        </aside>
+
+        <div class="topic-content" id="noi-dung-chuyen-de" aria-live="polite">
+          <div id="topic-detail"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page-width">
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span class="brand-copy"><strong>SỔ TAY</strong><span>TOÁN 12</span></span>
+      </a>
+      <p>Nội dung tóm lược để ôn tập. Hãy đối chiếu sách giáo khoa và hướng dẫn của giáo viên.</p>
+      <a href="sgk-toan12.pdf" target="_blank" rel="noopener">Xem sách giáo khoa PDF <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ee">
+    <meta name="description" content="Lý thuyết Toán 12 được hệ thống theo chuyên đề, kèm công thức và ví dụ giải từng bước.">
+    <title>Lý thuyết Toán 12 — Công thức và ví dụ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="math-render.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Sổ tay Toán 12, về trang chủ">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span class="brand-copy"><strong>SỔ TAY</strong><span>TOÁN 12</span></span>
+      </a>
+      <nav class="top-links" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="#ly-thuyet">Lý thuyết</a>
+        <a href="index.html#hoc-tap">Luyện tập</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Mở menu điều hướng"><span aria-hidden="true">☰</span></summary>
+        <nav class="mobile-nav-panel" aria-label="Điều hướng trên điện thoại">
+          <a href="index.html">Trang chủ</a>
+          <a href="#ly-thuyet">Kiến thức lý thuyết</a>
+          <a href="index.html#hoc-tap">Luyện tập</a>
+          <a href="sgk-toan12.pdf" target="_blank" rel="noopener">Mở sách giáo khoa PDF</a>
+        </nav>
+      </details>
+      <a class="source-link" href="sgk-toan12.pdf" target="_blank" rel="noopener">
+        <span aria-hidden="true">↗</span> Mở sách giáo khoa PDF
+      </a>
+    </header>
+
+    <main class="theory-page">
+      <section class="hero page-width theory-hero" aria-labelledby="theory-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> SỔ TAY KIẾN THỨC · TOÁN 12</p>
+          <h1 id="theory-title">Từ công thức<br><span>đến cách hiểu.</span></h1>
+          <p class="hero-description">Ôn lý thuyết cốt lõi theo từng mạch kiến thức, xem cách áp dụng qua ví dụ giải từng bước.</p>
+        </div>
+        <div class="theory-hero-side" aria-label="Sáu chuyên đề lý thuyết">
+          <span class="section-kicker">LỘ TRÌNH HỌC</span>
+          <strong>06</strong>
+          <span>chuyên đề · công thức · ví dụ mẫu</span>
+          <a href="#chu-de-01">Bắt đầu đọc <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <div class="theory-layout page-width" id="ly-thuyet">
+        <aside class="theory-index" aria-label="Mục lục lý thuyết">
+          <span class="section-kicker">MỤC LỤC</span>
+          <h2>Chuyên đề</h2>
+          <nav>
+            <a href="#chu-de-01"><span>01</span> Đạo hàm &amp; khảo sát</a>
+            <a href="#chu-de-02"><span>02</span> Vectơ không gian</a>
+            <a href="#chu-de-03"><span>03</span> Thống kê ghép nhóm</a>
+            <a href="#chu-de-04"><span>04</span> Nguyên hàm &amp; tích phân</a>
+            <a href="#chu-de-05"><span>05</span> Hình học Oxyz</a>
+            <a href="#chu-de-06"><span>06</span> Xác suất có điều kiện</a>
+          </nav>
+          <a class="theory-index-source" href="sgk-toan12.pdf" target="_blank" rel="noopener">Đối chiếu sách giáo khoa ↗</a>
+        </aside>
+
+        <div class="theory-content">
+          <section class="theory-topic" id="chu-de-01" aria-labelledby="topic-title-01">
+            <header class="theory-topic-heading">
+              <span class="theory-number">01</span>
+              <div><p class="section-kicker">GIẢI TÍCH</p><h2 id="topic-title-01">Ứng dụng đạo hàm khảo sát hàm số</h2></div>
+            </header>
+            <div class="theory-explanation">
+              <h3>Ý tưởng chính</h3>
+              <p>Đạo hàm cho biết tốc độ thay đổi của hàm số. Dấu của f′ trên từng khoảng giúp xác định hàm đồng biến hay nghịch biến; những điểm f′ = 0 hoặc f′ không xác định là các điểm cần kiểm tra khi tìm cực trị. Kết hợp với giới hạn và tiệm cận, ta lập bảng biến thiên rồi phác họa đồ thị.</p>
+            </div>
+            <section class="theory-formula-section" aria-label="Công thức đạo hàm">
+              <div class="block-heading"><h3>Công thức cần nhớ</h3><span class="block-label">ĐẠO HÀM &amp; ĐỒ THỊ</span></div>
+              <div class="formula-grid">
+                <article class="formula-card"><span class="formula-name">Quy tắc lũy thừa</span><span class="formula-expression">(xⁿ)′ = n·xⁿ⁻¹</span></article>
+                <article class="formula-card"><span class="formula-name">Quy tắc tích</span><span class="formula-expression">(u·v)′ = u′v + uv′</span></article>
+                <article class="formula-card"><span class="formula-name">Quy tắc thương</span><span class="formula-expression">(u/v)′ = (u′v − uv′)/v²</span></article>
+                <article class="formula-card"><span class="formula-name">Tiếp tuyến tại x₀</span><span class="formula-expression">y = f′(x₀)(x − x₀) + f(x₀)</span></article>
+                <article class="formula-card"><span class="formula-name">Tính đơn điệu</span><span class="formula-expression">f′ &gt; 0: đồng biến; f′ &lt; 0: nghịch biến</span></article>
+                <article class="formula-card"><span class="formula-name">Dấu hiệu cực trị</span><span class="formula-expression">f′ đổi dấu khi qua x₀ ⇒ có cực trị</span></article>
+              </div>
+            </section>
+            <section class="worked-example" aria-label="Ví dụ khảo sát hàm số">
+              <div class="example-heading"><span class="example-badge">Ví dụ</span><h3>Xét sự biến thiên của f(x) = x³ − 3x</h3></div>
+              <ol class="example-steps">
+                <li><span>01</span><p><strong>Tính đạo hàm:</strong> f′(x) = 3x² − 3 = 3(x − 1)(x + 1).</p></li>
+                <li><span>02</span><p><strong>Tìm điểm tới hạn:</strong> f′(x) = 0 khi x = −1 hoặc x = 1.</p></li>
+                <li><span>03</span><p><strong>Xét dấu f′:</strong> f′ dương trên (−∞; −1) và (1; +∞), âm trên (−1; 1).</p></li>
+                <li><span>04</span><p><strong>Kết luận:</strong> hàm đồng biến trên (−∞; −1), (1; +∞); nghịch biến trên (−1; 1). Cực đại tại (−1; 2), cực tiểu tại (1; −2).</p></li>
+              </ol>
+            </section>
+          </section>
+
+          <section class="theory-topic" id="chu-de-02" aria-labelledby="topic-title-02">
+            <header class="theory-topic-heading">
+              <span class="theory-number">02</span>
+              <div><p class="section-kicker">HÌNH HỌC KHÔNG GIAN</p><h2 id="topic-title-02">Vectơ và hệ tọa độ trong không gian</h2></div>
+            </header>
+            <div class="theory-explanation">
+              <h3>Ý tưởng chính</h3>
+              <p>Trong hệ tọa độ Oxyz, mỗi vectơ được xác định bởi ba thành phần. Các phép tính vectơ được thực hiện theo từng tọa độ; tích vô hướng giúp kiểm tra vuông góc và tính góc giữa hai vectơ. Độ dài vectơ được suy ra từ định lý Pythagore trong không gian.</p>
+            </div>
+            <section class="theory-formula-section" aria-label="Công thức vectơ trong không gian">
+              <div class="block-heading"><h3>Công thức cần nhớ</h3><span class="block-label">TỌA ĐỘ &amp; VECTƠ</span></div>
+              <div class="formula-grid">
+                <article class="formula-card"><span class="formula-name">Tọa độ vectơ AB</span><span class="formula-expression">AB = (x₂−x₁; y₂−y₁; z₂−z₁)</span></article>
+                <article class="formula-card"><span class="formula-name">Độ dài vectơ</span><span class="formula-expression">‖u‖ = √(u₁² + u₂² + u₃²)</span></article>
+                <article class="formula-card"><span class="formula-name">Tích vô hướng</span><span class="formula-expression">u·v = u₁v₁ + u₂v₂ + u₃v₃</span></article>
+                <article class="formula-card"><span class="formula-name">Góc giữa hai vectơ</span><span class="formula-expression">cos θ = (u·v)/(‖u‖‖v‖)</span></article>
+                <article class="formula-card"><span class="formula-name">Trung điểm AB</span><span class="formula-expression">M = ((x₁+x₂)/2; (y₁+y₂)/2; (z₁+z₂)/2)</span></article>
+                <article class="formula-card"><span class="formula-name">Điều kiện vuông góc</span><span class="formula-expression">u ⟂ v ⇔ u·v = 0</span></article>
+              </div>
+            </section>
+            <section class="worked-example" aria-label="Ví dụ tính vectơ và độ dài">
+              <div class="example-heading"><span class="example-badge">Ví dụ</span><h3>Cho A(1; 2; −1), B(3; 0; 2). Tính AB và độ dài AB</h3></div>
+              <ol class="example-steps">
+                <li><span>01</span><p><strong>Lấy tọa độ B trừ tọa độ A:</strong> AB = (3−1; 0−2; 2−(−1)) = (2; −2; 3).</p></li>
+                <li><span>02</span><p><strong>Dùng công thức độ dài:</strong> ‖AB‖ = √(2² + (−2)² + 3²).</p></li>
+                <li><span>03</span><p><strong>Kết quả:</strong> ‖AB‖ = √17.</p></li>
+              </ol>
+            </section>
+          </section>
+
+          <section class="theory-topic" id="chu-de-03" aria-labelledby="topic-title-03">
+            <header class="theory-topic-heading">
+              <span class="theory-number">03</span>
+              <div><p class="section-kicker">THỐNG KÊ</p><h2 id="topic-title-03">Các số đặc trưng của mẫu số liệu ghép nhóm</h2></div>
+            </header>
+            <div class="theory-explanation">
+              <h3>Ý tưởng chính</h3>
+              <p>Mỗi lớp dữ liệu được đại diện bởi trung điểm của khoảng lớp; tần số cho biết có bao nhiêu giá trị thuộc lớp đó. Dùng các giá trị đại diện để ước lượng số trung bình, phương sai và độ lệch chuẩn. Độ lệch chuẩn càng lớn thì số liệu thường phân tán quanh số trung bình nhiều hơn.</p>
+            </div>
+            <section class="theory-formula-section" aria-label="Công thức thống kê">
+              <div class="block-heading"><h3>Công thức cần nhớ</h3><span class="block-label">MẪU GHÉP NHÓM</span></div>
+              <div class="formula-grid">
+                <article class="formula-card"><span class="formula-name">Giá trị đại diện</span><span class="formula-expression">xᵢ = (đầu mút trái + đầu mút phải)/2</span></article>
+                <article class="formula-card"><span class="formula-name">Cỡ mẫu</span><span class="formula-expression">N = Σnᵢ</span></article>
+                <article class="formula-card"><span class="formula-name">Số trung bình</span><span class="formula-expression">x̄ = (Σnᵢxᵢ)/N</span></article>
+                <article class="formula-card"><span class="formula-name">Phương sai</span><span class="formula-expression">s² = (Σnᵢ(xᵢ − x̄)²)/N</span></article>
+                <article class="formula-card"><span class="formula-name">Công thức rút gọn</span><span class="formula-expression">s² = (Σnᵢxᵢ²)/N − x̄²</span></article>
+                <article class="formula-card"><span class="formula-name">Độ lệch chuẩn</span><span class="formula-expression">s = √s²</span></article>
+              </div>
+            </section>
+            <section class="worked-example" aria-label="Ví dụ tính số trung bình và độ phân tán">
+              <div class="example-heading"><span class="example-badge">Ví dụ</span><h3>Hai lớp [0; 10), [10; 20) có tần số lần lượt 2 và 6</h3></div>
+              <ol class="example-steps">
+                <li><span>01</span><p><strong>Tìm giá trị đại diện:</strong> x₁ = 5, x₂ = 15; cỡ mẫu N = 2 + 6 = 8.</p></li>
+                <li><span>02</span><p><strong>Tính số trung bình:</strong> x̄ = (2·5 + 6·15)/8 = 12,5.</p></li>
+                <li><span>03</span><p><strong>Tính phương sai:</strong> s² = [2(5−12,5)² + 6(15−12,5)²]/8 = 18,75.</p></li>
+                <li><span>04</span><p><strong>Tính độ lệch chuẩn:</strong> s = √18,75 ≈ 4,33.</p></li>
+              </ol>
+            </section>
+          </section>
+
+          <section class="theory-topic" id="chu-de-04" aria-labelledby="topic-title-04">
+            <header class="theory-topic-heading">
+              <span class="theory-number">04</span>
+              <div><p class="section-kicker">GIẢI TÍCH</p><h2 id="topic-title-04">Nguyên hàm và tích phân</h2></div>
+            </header>
+            <div class="theory-explanation">
+              <h3>Ý tưởng chính</h3>
+              <p>Nguyên hàm F của f là hàm có đạo hàm bằng f. Tích phân xác định được tính bằng hiệu giá trị của một nguyên hàm tại hai cận. Khi f không âm trên đoạn, tích phân biểu diễn diện tích hình phẳng giới hạn bởi đồ thị, trục hoành và hai đường thẳng x = a, x = b.</p>
+            </div>
+            <section class="theory-formula-section" aria-label="Công thức nguyên hàm và tích phân">
+              <div class="block-heading"><h3>Công thức cần nhớ</h3><span class="block-label">NGUYÊN HÀM &amp; TÍCH PHÂN</span></div>
+              <div class="formula-grid">
+                <article class="formula-card"><span class="formula-name">Nguyên hàm lũy thừa</span><span class="formula-expression">∫xⁿ dx = xⁿ⁺¹/(n+1) + C, n ≠ −1</span></article>
+                <article class="formula-card"><span class="formula-name">Nguyên hàm 1/x</span><span class="formula-expression">∫(1/x) dx = ln|x| + C</span></article>
+                <article class="formula-card"><span class="formula-name">Tính tuyến tính</span><span class="formula-expression">∫(af + bg)dx = a∫f dx + b∫g dx</span></article>
+                <article class="formula-card"><span class="formula-name">Newton–Leibniz</span><span class="formula-expression">∫ₐᵇ f(x)dx = F(b) − F(a), F′ = f</span></article>
+                <article class="formula-card"><span class="formula-name">Diện tích giữa hai đồ thị</span><span class="formula-expression">S = ∫ₐᵇ |f(x) − g(x)| dx</span></article>
+                <article class="formula-card"><span class="formula-name">Diện tích dưới đồ thị</span><span class="formula-expression">f ≥ 0 ⇒ S = ∫ₐᵇ f(x) dx</span></article>
+              </div>
+            </section>
+            <section class="worked-example" aria-label="Ví dụ tính tích phân xác định">
+              <div class="example-heading"><span class="example-badge">Ví dụ</span><h3>Tính ∫₀² (2x + 1) dx</h3></div>
+              <ol class="example-steps">
+                <li><span>01</span><p><strong>Tìm một nguyên hàm:</strong> F(x) = x² + x.</p></li>
+                <li><span>02</span><p><strong>Thay cận theo Newton–Leibniz:</strong> F(2) − F(0) = (4 + 2) − 0.</p></li>
+                <li><span>03</span><p><strong>Kết quả:</strong> ∫₀² (2x + 1) dx = 6.</p></li>
+              </ol>
+            </section>
+          </section>
+
+          <section class="theory-topic" id="chu-de-05" aria-labelledby="topic-title-05">
+            <header class="theory-topic-heading">
+              <span class="theory-number">05</span>
+              <div><p class="section-kicker">HÌNH HỌC GIẢI TÍCH</p><h2 id="topic-title-05">Đường thẳng, mặt phẳng, mặt cầu trong Oxyz</h2></div>
+            </header>
+            <div class="theory-explanation">
+              <h3>Ý tưởng chính</h3>
+              <p>Phương trình hình học không gian thường được lập từ một điểm thuộc đối tượng và một vectơ đặc trưng. Mặt phẳng dùng vectơ pháp tuyến; đường thẳng dùng vectơ chỉ phương; mặt cầu được xác định bởi tâm và bán kính. Hệ số trong phương trình mặt phẳng cũng chính là tọa độ một vectơ pháp tuyến.</p>
+            </div>
+            <section class="theory-formula-section" aria-label="Công thức hình học Oxyz">
+              <div class="block-heading"><h3>Công thức cần nhớ</h3><span class="block-label">PHƯƠNG TRÌNH TRONG OXYZ</span></div>
+              <div class="formula-grid">
+                <article class="formula-card"><span class="formula-name">Mặt phẳng qua M₀</span><span class="formula-expression">A(x−x₀)+B(y−y₀)+C(z−z₀)=0</span></article>
+                <article class="formula-card"><span class="formula-name">Vectơ pháp tuyến</span><span class="formula-expression">Ax+By+Cz+D=0 ⇒ n = (A; B; C)</span></article>
+                <article class="formula-card"><span class="formula-name">Đường thẳng qua M₀</span><span class="formula-expression">x=x₀+at; y=y₀+bt; z=z₀+ct</span></article>
+                <article class="formula-card"><span class="formula-name">Vectơ chỉ phương</span><span class="formula-expression">u = (a; b; c)</span></article>
+                <article class="formula-card"><span class="formula-name">Mặt cầu tâm I(a;b;c)</span><span class="formula-expression">(x−a)²+(y−b)²+(z−c)² = R²</span></article>
+                <article class="formula-card"><span class="formula-name">Khoảng cách điểm–mặt phẳng</span><span class="formula-expression">d = |Ax₀+By₀+Cz₀+D|/√(A²+B²+C²)</span></article>
+              </div>
+            </section>
+            <section class="worked-example" aria-label="Ví dụ lập phương trình mặt phẳng">
+              <div class="example-heading"><span class="example-badge">Ví dụ</span><h3>Lập mặt phẳng đi qua M(1; 0; 2), có pháp tuyến n = (2; −1; 3)</h3></div>
+              <ol class="example-steps">
+                <li><span>01</span><p><strong>Dùng dạng qua điểm và vectơ pháp tuyến:</strong> 2(x−1) − (y−0) + 3(z−2) = 0.</p></li>
+                <li><span>02</span><p><strong>Khai triển và thu gọn:</strong> 2x − 2 − y + 3z − 6 = 0.</p></li>
+                <li><span>03</span><p><strong>Kết quả:</strong> (P): 2x − y + 3z − 8 = 0.</p></li>
+              </ol>
+            </section>
+          </section>
+
+          <section class="theory-topic" id="chu-de-06" aria-labelledby="topic-title-06">
+            <header class="theory-topic-heading">
+              <span class="theory-number">06</span>
+              <div><p class="section-kicker">XÁC SUẤT</p><h2 id="topic-title-06">Xác suất có điều kiện</h2></div>
+            </header>
+            <div class="theory-explanation">
+              <h3>Ý tưởng chính</h3>
+              <p>Xác suất có điều kiện P(A|B) đo khả năng A xảy ra trong phạm vi các trường hợp B đã xảy ra. Công thức xác suất toàn phần cộng các khả năng theo từng trường hợp loại trừ nhau; công thức Bayes đảo chiều điều kiện để suy ra nguyên nhân khi đã quan sát kết quả.</p>
+            </div>
+            <section class="theory-formula-section" aria-label="Công thức xác suất có điều kiện">
+              <div class="block-heading"><h3>Công thức cần nhớ</h3><span class="block-label">BIẾN CỐ &amp; ĐIỀU KIỆN</span></div>
+              <div class="formula-grid">
+                <article class="formula-card"><span class="formula-name">Xác suất có điều kiện</span><span class="formula-expression">P(A|B) = P(A∩B)/P(B), P(B)&gt;0</span></article>
+                <article class="formula-card"><span class="formula-name">Quy tắc nhân</span><span class="formula-expression">P(A∩B) = P(B)·P(A|B)</span></article>
+                <article class="formula-card"><span class="formula-name">Biến cố độc lập</span><span class="formula-expression">P(A∩B) = P(A)P(B)</span></article>
+                <article class="formula-card"><span class="formula-name">Xác suất toàn phần</span><span class="formula-expression">P(A) = ΣP(Bᵢ)P(A|Bᵢ)</span></article>
+                <article class="formula-card"><span class="formula-name">Công thức Bayes</span><span class="formula-expression">P(Bⱼ|A) = P(Bⱼ)P(A|Bⱼ)/P(A)</span></article>
+                <article class="formula-card"><span class="formula-name">Biến cố đối</span><span class="formula-expression">P(A̅) = 1 − P(A)</span></article>
+              </div>
+            </section>
+            <section class="worked-example" aria-label="Ví dụ sử dụng công thức Bayes">
+              <div class="example-heading"><span class="example-badge">Ví dụ</span><h3>Hai xưởng I, II lần lượt sản xuất 60%, 40%; tỉ lệ lỗi là 1%, 3%</h3></div>
+              <ol class="example-steps">
+                <li><span>01</span><p><strong>Gọi D là sự kiện sản phẩm bị lỗi.</strong> Theo xác suất toàn phần: P(D) = 0,6·0,01 + 0,4·0,03 = 0,018.</p></li>
+                <li><span>02</span><p><strong>Tính xác suất sản phẩm vừa từ xưởng II vừa bị lỗi:</strong> P(II∩D) = 0,4·0,03 = 0,012.</p></li>
+                <li><span>03</span><p><strong>Áp dụng Bayes:</strong> P(II|D) = 0,012/0,018 = 2/3.</p></li>
+                <li><span>04</span><p><strong>Kết luận:</strong> nếu biết sản phẩm bị lỗi, xác suất sản phẩm đến từ xưởng II là 2/3.</p></li>
+              </ol>
+            </section>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer page-width">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span class="brand-copy"><strong>SỔ TAY</strong><span>TOÁN 12</span></span>
+      </a>
+      <p>Tóm lược để ôn tập, kèm ví dụ tự biên soạn. Hãy đối chiếu sách giáo khoa và hướng dẫn của giáo viên.</p>
+      <a href="index.html#hoc-tap">Đến phần luyện tập <span aria-hidden="true">→</span></a>
+    </footer>
+  </body>
+</html>
